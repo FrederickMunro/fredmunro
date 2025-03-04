@@ -1,0 +1,193 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  --main-color: black;
+  --secondary-color: white;
+  --text-color: #F8F8F8;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+/* -------------------- Inview Animations -------------------- */
+
+.observer-move-left-appear {
+  transition: transform 0.75s ease-out, opacity 1s ease-out;
+}
+
+.hidden-move-left-appear {
+  transform: translateX(50%);
+  opacity: 0;
+}
+
+.visible-move-left-appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.observer-move-right-appear {
+  transition: transform 0.75s ease-out, opacity 1s ease-out;
+}
+
+.hidden-move-right-appear {
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.visible-move-right-appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+.observer-move-up-appear-delay {
+  transition: transform 0.75s ease-out, opacity 1s ease-out;
+  transition-delay: 0.75s;
+}
+
+.hidden-move-up-appear-delay {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.visible-move-up-appear-delay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* -------------------- Color Wheel -------------------- */
+
+.master-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+/* Color Wheel */
+.color-picker-container {
+
+}
+
+.color-picker-container.hidden {
+  
+}
+
+.color-picker-container.visible {
+  
+}
+
+/* -------------------- Home -------------------- */
+
+.home-master-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-name {
+  font-size: max(1.5rem, min(5rem, 8vw));
+  font-weight: 500;
+}
+
+.home-title {
+  font-size: max(1rem, min(3.5rem, 5.5vw));
+  font-weight: 300;
+}
+
+.home-button {
+  margin-top: max(0.5rem, min(2rem, 4vw));
+  padding: max(0.2rem, min(0.5rem, 1vw)) max(1rem, min(2rem, 4.5vw));
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+  transition: background-color 0.25s ease-in;
+}
+
+.home-button:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+.home-button:hover .home-button-text {
+  color: var(--main-color);
+  /* font-weight: 500; */
+}
+
+.home-button-text {
+  font-size: max(0.5rem, min(2rem, 3vw));
+  font-weight: 400;
+  transition: color 0.25s ease-in;
+}
+
+/* -------------------- Stack -------------------- */
+
+.stack-master-container {
+  width: 100vw;
+  max-width: 100rem;
+}
+
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stack-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color:#2D2D2D;
+  gap: 2rem;
+  width: 15rem;
+  max-width: 15rem;
+}
+
+.stack-item-icon {
+  font-size: 2rem;
+}
+
+.stack-item-name {
+  font-size: 1.1rem;
+}
