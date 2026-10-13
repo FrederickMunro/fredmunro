@@ -191,3 +191,24 @@ h1, h2, h3, h4, h5, h6, p {
 .stack-item-name {
   font-size: 1.1rem;
 }
+
+/* -------------------- Projects -------------------- */
+
+.project-container {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container-left {
+  width: 30%;
+  height: 70vh;
+  background-color: white;
+}
+
+.project-container-right {
+  width: 60%;
+  height: 70vh;
+}

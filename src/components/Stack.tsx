@@ -1,8 +1,8 @@
-import { FaReact, FaNodeJs, FaJava, FaPython, FaDocker, FaHtml5, FaCss3 } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava, FaPython, FaDocker, FaHtml5, FaCss3, FaAngular, FaJenkins, FaGit, FaGitSquare, FaGitAlt } from "react-icons/fa";
 import { SiTypescript, SiJavascript, SiSpring, SiGradle } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
-import { DiPython, DiJava } from "react-icons/di";
-import StackItem from "./components/StackItem";
+import { DiPython, DiJava, DiJenkins } from "react-icons/di";
+import StackItem from "./StackItem";
 
 
 const Stack = () => {
@@ -50,6 +50,13 @@ const Stack = () => {
               color='#1572B6'
             />
     },
+    {
+      name: 'Angular',
+      icon: <FaAngular
+              className='stack-item-icon'
+              color='#dd1b16'
+            />
+    },
   ];
 
   const backend = [
@@ -74,16 +81,16 @@ const Stack = () => {
               color='#3776AB'
             />
     },
-    {
-      name: 'C++',
-      icon: <TbBrandCpp
-              className='stack-item-icon'
-              color='#00599C'
-            />
-    },
   ];
 
   const other = [
+    {
+      name: 'Git',
+      icon: <FaGitAlt
+              className='stack-item-icon'
+              color='#f1502f'
+            />
+    },
     {
       name: 'Docker',
       icon: <FaDocker
@@ -96,6 +103,13 @@ const Stack = () => {
       icon: <SiGradle
               className='stack-item-icon'
               color='#009B75'
+            />
+    },
+    {
+      name: 'Jenkins',
+      icon: <DiJenkins
+              className='stack-item-icon'
+              color='#d33834'
             />
     },
   ]
